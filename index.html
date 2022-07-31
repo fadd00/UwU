@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>my portofolio</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <section class="banner" id="sec"> 
+        <header>
+            <a href="index.html" class="logo">anjim luwh banh</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>hello<br>I'm <span>Andhika Hutama</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit cupiditate dicta corrupti accusantium voluptate similique molestiae enim distinctio eaque asperiores sit sint ab odit aperiam expedita consequatur, a ullam fugiat!</p>
+            <a href="#">Know more</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="https://twitter.com/uwewi1"><img src="img/twitter.png"></a></li>
+            <li><a href="#"><img src="img/linkedin.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hal2.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#"> portofolio</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
